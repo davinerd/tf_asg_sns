@@ -12,7 +12,7 @@ Nothing is created in output.
 
 ```
 module "asg_sns_notification" {
-  source = "git::https://github.com/Cimpress-MCP/terraform.git//asg_sns_notifications"
+  source = "git::https://github.com/davinerd/tf_asg_sns"
 
   asg_names = "${aws_autoscaling_group.asgone.name},${aws_autoscaling_group.asg_two.name}"
 
