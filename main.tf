@@ -1,5 +1,5 @@
 resource "aws_autoscaling_notification" "asg_notifications" {
-  group_names = ["${split(",", var.asg_names)}"]
+  group_names = "${var.asg_names}"
 
   notifications = [
     "autoscaling:EC2_INSTANCE_LAUNCH",

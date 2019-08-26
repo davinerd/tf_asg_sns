@@ -1,6 +1,6 @@
 variable "asg_names" {
-  type = "string"
-  description = "ASG names to attach the notifications to (comma separated list)"
+  type = "list"
+  description = "List of ASG's names to attach the notifications to"
 }
 
 variable "sns_topic" {
